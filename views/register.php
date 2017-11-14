@@ -1,4 +1,5 @@
 <?php include('kernel/head.php') ?>
+<link type="text/javascript" href="js/register.js" />
 <!-- register form -->
 <style type="text/css">
     body > .grid {
@@ -67,23 +68,26 @@ Início
       <div class="ui error message"></div>
 
     </form>
-<div class="ui inverted message" id="regform"><?php
-// show potential errors / feedback (from registration object)
+<?php
 if (isset($registration)) {
     if ($registration->errors) {
         foreach ($registration->errors as $error) {
+            echo '<div id="regform" class="ui error message">';
             echo $error;
+            echo '</div>';
         }
     }
   }
   if (isset($registration)) {
     if ($registration->messages) {
         foreach ($registration->messages as $message) {
+            echo '<div id="regform" class="ui success message">';
             echo $message;
+            echo '</div>';
         }
     }
 }
-?></div>
+?>
     <div class="ui inverted message" id="regform">
 Já possui uma conta? <a href="login.php">Conecte-se</a>
     </div>
