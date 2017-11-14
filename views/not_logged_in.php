@@ -1,14 +1,13 @@
 
-<!-- login form box -->
 <div class="ui secondary inverted menu" id="nav">
-  <a class="item">
+  <a class="item" href="index.php">
     <img src="css/images/logo.png"
   </a>
   <a class="item">
     Personagens
 </a>
   <a class="item">
-    Desenvolvedores
+    Criadores
   </a>
   <div class="right menu">
 
