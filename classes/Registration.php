@@ -37,11 +37,11 @@ class Registration
     private function registerNewUser()
     {
         if (empty($_POST['user_name'])) {
-            $this->errors[] = "Empty Username";
+            $this->errors[] = "Usuário vazio";
         } elseif (empty($_POST['user_password_new']) || empty($_POST['user_password_repeat'])) {
-            $this->errors[] = "Empty Password";
+            $this->errors[] = "Senha vazia";
         } elseif ($_POST['user_password_new'] !== $_POST['user_password_repeat']) {
-            $this->errors[] = "Password and password repeat are not the same";
+            $this->errors[] = "Uma senha está diferente da outra!";
         } elseif (strlen($_POST['user_password_new']) < 6) {
             $this->errors[] = "Password has a minimum length of 6 characters";
         } elseif (strlen($_POST['user_name']) > 64 || strlen($_POST['user_name']) < 2) {
@@ -53,7 +53,7 @@ class Registration
         } elseif (strlen($_POST['user_email']) > 64) {
             $this->errors[] = "Email não pode ser tão grande";
         } elseif (!filter_var($_POST['user_email'], FILTER_VALIDATE_EMAIL)) {
-            $this->errors[] = "Your email address is not in a valid email format";
+            $this->errors[] = "Seu email está errado!";
         } elseif (!empty($_POST['user_name'])
             && strlen($_POST['user_name']) <= 64
             && strlen($_POST['user_name']) >= 2
@@ -92,7 +92,7 @@ class Registration
                 $query_check_user_name = $this->db_connection->query($sql);
 
                 if ($query_check_user_name->num_rows == 1) {
-                    $this->errors[] = "Sorry, that username / email address is already taken.";
+                    $this->errors[] = "Iiiih... esse nome de usuário já foi utilizado.";
                 } else {
                     // write new user's data into database
                     $sql = "INSERT INTO users (user_name, user_password_hash, user_email)
@@ -101,16 +101,16 @@ class Registration
 
                     // if user has been added successfully
                     if ($query_new_user_insert) {
-                        $this->messages[] = "Your account has been created successfully. You can now log in.";
+                        $this->messages[] = "Sua conta foi criada com sucesso, agora faça o login.";
                     } else {
-                        $this->errors[] = "Sorry, your registration failed. Please go back and try again.";
+                        $this->errors[] = "Foi mal, não conseguimos te registrar. Tente novamente daqui a pouco :D.";
                     }
                 }
             } else {
-                $this->errors[] = "Sorry, no database connection.";
+                $this->errors[] = "Sem conexão com o banco de dados.";
             }
         } else {
-            $this->errors[] = "An unknown error occurred.";
+            $this->errors[] = "Alguma coisa deu errado...";
         }
     }
 }
