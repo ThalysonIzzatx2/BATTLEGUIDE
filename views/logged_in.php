@@ -1,15 +1,15 @@
 
 <div class="ui secondary inverted menu" id="nav">
-  <a class="item">
+  <a class="item" href="index.php">
     <img src="css/images/logo.png"
   </a>
   <a class="item">
     Personagens
   </a>
   <a class="item">
-    Desenvolvedores
+    Criadores
   </a>
-  <a class="ui active item" href="#endereço criação carga">
+  <a class="ui active item" href="build.php">
     Criar uma nova carga
   </a>
   <div class="right menu">
