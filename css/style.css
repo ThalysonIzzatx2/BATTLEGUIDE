@@ -25,9 +25,60 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+#login {
+  -webkit-animation-name: lognavslideInDown;
+  animation-name: lognavslideInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.4s;
+}
+#userform {
+  -webkit-animation-name: navslideInDown;
+  animation-name: navslideInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.3s;
+}
+#passform {
+  -webkit-animation-name: navslideInDown;
+  animation-name: navslideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.2s;
+}
+#logform {
+  -webkit-animation-name: navslideInDown;
+  animation-name: navslideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.1s;
+}
+#regform {
+  -webkit-animation-name: navslideInDown;
+  animation-name: navslideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}
 #guide {
   color:#fff;
   animation: laranja 2.5s ease-in-out forwards;
+  -webkit-animation-name: laranja 2.5s ease-in-out forwards;
 }
 
 @keyframes laranja {
@@ -44,18 +95,8 @@
                   NAME ANIMATIONS
 ------------------------------------------------------*/
 
- @-webkit-keyframes slideInDown {
- 0% {
- -webkit-transform: translateY(-20%);
- transform: translateY(-20%);
- visibility: visible;
- }
- 100% {
- -webkit-transform: translateY(0);
- transform: translateY(0);
- }
- }
  @keyframes slideInDown {
+
  0% {
  -webkit-transform: translateY(-20%);
  transform: translateY(-20%);
@@ -70,10 +111,16 @@
                   NAVBAR ANIMATIONS
 ------------------------------------------------------*/
 
- @-webkit-keyframes navslideInDown {
+ @keyframes navslideInDown {
+   from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
  0% {
- -webkit-transform: translateY(-20%);
- transform: translateY(-20%);
+ -webkit-transform: translateY(-150%);
+ transform: translateY(-150%);
  visibility: visible;
  }
  100% {
@@ -81,10 +128,19 @@
  transform: translateY(0);
  }
  }
- @keyframes navslideInDown {
+ /* -----------------------------------------------------
+                LOGIN LOGO ANIMATIONS
+ ------------------------------------------------------*/
+ @keyframes lognavslideInDown {
+   from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
  0% {
- -webkit-transform: translateY(-150%);
- transform: translateY(-150%);
+ -webkit-transform: translateY(-40%);
+ transform: translateY(-40%);
  visibility: visible;
  }
  100% {
