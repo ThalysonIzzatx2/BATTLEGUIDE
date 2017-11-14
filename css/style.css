@@ -75,6 +75,9 @@
   -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
   animation-delay: 0s;
 }
+#errorform {
+
+}
 #guide {
   color:#fff;
   animation: laranja 2.5s ease-in-out forwards;
