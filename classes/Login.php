@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Class login
- * handles the user's login and logout process
+ * Classe de login
+ * Cuida do processo de login e desconxão
  */
 class Login
 {
     /**
-     * @var object The database connection
+     * @var object conexão banco de dados
      */
     private $db_connection = null;
     /**
-     * @var array Collection of error messages
+     * @var array Mensagens de erro, estão no final do arquivo
      */
     public $errors = array();
     /**
-     * @var array Collection of success / neutral messages
+     * @var array Mensagens de sucesso
      */
     public $messages = array();
 
@@ -54,7 +54,7 @@ class Login
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
             $this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-            // change character set to utf8 and check it
+            // muda conjunto de caracteres para UTF8
             if (!$this->db_connection->set_charset("utf8")) {
                 $this->errors[] = $this->db_connection->error;
             }
@@ -78,8 +78,7 @@ class Login
                     // get result row (as an object)
                     $result_row = $result_of_login_check->fetch_object();
 
-                    // using PHP 5.5's password_verify() function to check if the provided password fits
-                    // the hash of that user's password
+                    // criptografa a senha do usuário para hash md5
                     if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
 
                         // write user data into PHP SESSION (a file on your server)
