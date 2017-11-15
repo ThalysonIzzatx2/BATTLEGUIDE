@@ -9,19 +9,19 @@
     </div>
     </div>
   <div class="item">
-    <img class="ui tiny image" src="Ashka_F_damage"/>
+    <img class="ui tiny image" src="Ashka_F_damage.png"/>
   </div>
   <div class="item">
-    <img class="ui tiny image" src="Ashka_M1_damage"/>
+    <img class="ui tiny image" src="Ashka_M1_damage.png"/>
   </div>
   <div class="item">
-    <img class="ui tiny image" src="Ashka_M1_mobility"/>
+    <img class="ui tiny image" src="Ashka_M1_mobility.png"/>
   </div>
   <div class="item">
-    <img class="ui tiny image" src="Ashka_Q._control"/>
+    <img class="ui tiny image" src="Ashka_Q._control.png"/>
   </div>
   <div class="item">
-    <img class="ui tiny image" src="Ashka_R_misc"/>
+    <img class="ui tiny image" src="Ashka_R_misc.png"/>
   </div>
   <div class="item">
     <div class="content">
@@ -30,5 +30,7 @@
     </div>
     </div>
 <!-- -->
+<!-- -->
+
 
 </div>
