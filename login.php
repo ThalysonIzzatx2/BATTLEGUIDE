@@ -1,13 +1,24 @@
-<?php include('kernel/head.php') ?>
+<head>
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/semantic.css">
+<title>BATTLEGUIDE - Guias e builds</title>
+
+<?php
+$list = array('bg1', 'bg2', 'bg3' );
+$i = array_rand($list);
+$img = $list[$i];
+?>
+</head>
 <style type="text/css">
     body > .grid {
-      height: 60%;
+      height: 70%;
     }
     .column {
       max-width: 500px;
     }
   </style>
-<body>
+<body class="<?php echo $img ?>">
   <div class="ui secondary inverted menu" id="nav">
   <a class="item" href="index.php">
     <img src="css/images/logo.png"

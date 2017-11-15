@@ -1,4 +1,15 @@
-<?php include('kernel/head.php') ?>
+<head>
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/semantic.css">
+<title>BATTLEGUIDE - Guias e builds</title>
+
+<?php
+$list = array('bg1', 'bg2', 'bg3' );
+$i = array_rand($list);
+$img = $list[$i];
+?>
+</head>
 <link type="text/javascript" href="js/register.js" />
 <!-- register form -->
 <style type="text/css">
@@ -9,7 +20,7 @@
       max-width: 500px;
     }
   </style>
-<body>
+<body class="<?php echo $img ?>">
   <div class="ui secondary inverted menu" id="nav">
   <a class="item" href="index.php">
     <img src="css/images/logo.png"

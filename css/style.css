@@ -5,13 +5,8 @@
 #beta {
   font-size: 12px;
 }
-#nav{
-  -webkit-animation-name: navslideInDown;
-  animation-name: navslideInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+#carglist {
+  padding-top: 20px;
 }
 #sitename {
   margin-top: 0.7em;
@@ -25,129 +20,26 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-#login {
-  -webkit-animation-name: lognavslideInDown;
-  animation-name: lognavslideInDown;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0.4s;
-}
-#userform {
-  -webkit-animation-name: navslideInDown;
-  animation-name: navslideInDown;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0.3s;
-}
-#passform {
-  -webkit-animation-name: navslideInDown;
-  animation-name: navslideInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0.2s;
-}
-#logform {
-  -webkit-animation-name: navslideInDown;
-  animation-name: navslideInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0.1s;
-}
-#regform {
-  -webkit-animation-name: navslideInDown;
-  animation-name: navslideInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0s;
-}
-#errorform {
-
-}
-#guide {
-  color:#fff;
-  animation: laranja 2.5s ease-in-out forwards;
-  -webkit-animation-name: laranja 2.5s ease-in-out forwards;
+.bg1 {
+background: url(images/bg.png);
+background-color: #232323;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
 }
 
-@keyframes laranja {
-  from {
-      color: #fff;
-    }
-
-    to {
-      color: #f45000;
-    }
-
+.bg2 {
+background: url(images/bg2.png);
+background-color: #232323;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
 }
-/* -----------------------------------------------------
-                  NAME ANIMATIONS
-------------------------------------------------------*/
 
- @keyframes slideInDown {
-
- 0% {
- -webkit-transform: translateY(-20%);
- transform: translateY(-20%);
- visibility: visible;
- }
- 100% {
- -webkit-transform: translateY(0);
- transform: translateY(0);
- }
- }
-/* -----------------------------------------------------
-                  NAVBAR ANIMATIONS
-------------------------------------------------------*/
-
- @keyframes navslideInDown {
-   from {
-       opacity: 0;
-     }
-     to {
-       opacity: 1;
-     }
- 0% {
- -webkit-transform: translateY(-150%);
- transform: translateY(-150%);
- visibility: visible;
- }
- 100% {
- -webkit-transform: translateY(0);
- transform: translateY(0);
- }
- }
- /* -----------------------------------------------------
-                LOGIN LOGO ANIMATIONS
- ------------------------------------------------------*/
- @keyframes lognavslideInDown {
-   from {
-       opacity: 0;
-     }
-     to {
-       opacity: 1;
-     }
- 0% {
- -webkit-transform: translateY(-40%);
- transform: translateY(-40%);
- visibility: visible;
- }
- 100% {
- -webkit-transform: translateY(0);
- transform: translateY(0);
- }
- }
+.bg3 {
+background: url(images/bg3.png);
+background-color: #232323;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}

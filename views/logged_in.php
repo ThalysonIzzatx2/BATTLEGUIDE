@@ -3,10 +3,10 @@
   <a class="item" href="index.php">
     <img src="css/images/logo.png"
   </a>
-  <a class="item">
+  <a class="item" href="personagens.php">
     Personagens
   </a>
-  <a class="item">
+  <a class="item" href="devs.php">
     Criadores
   </a>
   <a class="ui active item" href="build.php">
