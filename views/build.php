@@ -34,7 +34,7 @@ $linha = mysqli_fetch_array($consulta);
     <div class="ui header">Personagem
     <div class="ui sub header">
     <!-- Codigo pra exibir o champ com o corpo inteiro -->
-    <img style="width: 300px; border-radius: 7px;" src="<?php echo $foto ?>" alt="<?php echo $nome; ?>">
+    <img style="width: 300px; border-radius: 7px;" src="<?php echo $foto ?>" alt="<?php echo $nomeCh; ?>">
 
 </div>
     </div>
